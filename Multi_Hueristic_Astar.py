@@ -219,7 +219,6 @@ def multi_a_star(start, goal, n_hueristic):
 	close_list_inad = []
 	while open_list[0].minkey() < float('inf'):
 		for i in range(1, n_hueristic):
-			# print("i", i)
 			# print(open_list[0].minkey(), open_list[i].minkey())
 			if open_list[i].minkey() <= W2 * open_list[0].minkey():
 				global t
